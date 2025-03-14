@@ -1,0 +1,21 @@
+name: backplugin
+version: '1.0-release'
+main: org.bindywashere.backplugin.BackPlugin
+api-version: '1.20'
+commands:
+  back:
+    description: Возвращает телепортированного игрока на место до телепортации
+    usage: /back [игрок]
+    aliases:
+      - b
+      - backplayer
+      - вернуть
+      - в
+      - вернутьигрока
+    permission: backplugin.use
+    permission-message: §4У вас нет прав на использование этой команды!
+permissions:
+  backplugin.use:
+    default: op
+  backplugin.others:
+    default: op
